@@ -1,0 +1,61 @@
+
+ BLOCK:  CSTR     MODEL: RCSTR           
+ -----------------------------
+   INLET STREAM:          CUMHYD  
+   OUTLET STREAM:         PHENOL  
+   PROPERTY OPTION SET:   SYSOP0    IDEAL LIQUID / IDEAL GAS                    
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                              IN          OUT       GENERATION   RELATIVE DIFF.
+   TOTAL BALANCE
+   MOLE(KMOL/SEC)        0.310461E-02  0.318362E-02  0.790151E-04  0.510834E-16
+   MASS(KG/SEC  )        0.472500      0.472500                    0.000000E+00
+   ENTHALPY(WATT    )    -426354.      -445821.                    0.436647E-01
+
+                          ***  INPUT DATA  ***
+
+    REACTOR TYPE: TEMP SPEC TWO     PHASE REACTOR
+
+    REACTOR VOLUME                     CUM                        6.8930    
+    REACTOR TEMPERATURE                K                          353.15    
+    REACTOR PRESSURE                   N/SQM                     0.50662E+06
+
+    REACTION PARAGRAPH            ID:  R-1            TYPE:  POWERLAW
+    GLOBAL BASES:
+    KBASIS                                                   MOLE-GAMMA  
+    CBASIS                                                   MOLARITY    
+    SBASIS                                                   GLOBAL  
+
+    STOICHIOMETRY:         
+
+    REACTION NUMBER:          1
+      SUBSTREAM:  MIXED   
+        CUMEN-01   -1.0000      PHENO-01    1.0000      ACETO-01    1.0000    
+
+    REAC-DATA ENTRIES:
+
+      REACTION NO    TYPE     PHASE        DELT             BASIS
+                                              K   
+
+          1        KINETIC      L       0.00000E+00       MOLARITY    
+
+
+    RATE PARAMETERS:
+
+      REACTION NO   PREEXP. FACTOR   ACT. ENERGY   TEMP. EXPONENT   REF. TEMP
+                                       J/KMOL                       K       
+
+          1           0.16610E-05      97211.        0.50000         298.15    
+
+    POWERLAW EXPONENTS:    
+
+    REACTION NUMBER:          1
+      SUBSTREAM:  MIXED   
+        CUMEN-01    1.0000    
+
+                           ***  RESULTS  ***
+
+    REACTOR HEAT DUTY                  WATT                      -19467.    
+    RESIDENCE TIME                     SEC                        14359.    
+    VAPOR PHASE VOLUME FRACTION                                  0.00000E+00
+

@@ -1,0 +1,60 @@
+
+ BLOCK:  B1       MODEL: RSTOIC          
+ ------------------------------
+   INLET STREAM:          1       
+   OUTLET STREAM:         2       
+   PROPERTY OPTION SET:   PENG-ROB  STANDARD PR EQUATION OF STATE               
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                              IN          OUT       GENERATION   RELATIVE DIFF.
+   TOTAL BALANCE
+   MOLE(KMOL/HR )         19.8143       19.8143      0.000000E+00  0.000000E+00
+   MASS(KG/HR   )         1462.68       1462.68                    0.155450E-15
+   ENTHALPY(CAL/SEC )    -145028.      -193427.                    0.250217    
+
+                          ***  INPUT DATA  ***
+   STOICHIOMETRY MATRIX:
+
+    REACTION #   1:
+     SUBSTREAM MIXED   :
+     BENZA-01  -1.00    ACETA-01  -1.00    2-MET-01   1.00    WATER      1.00    
+
+
+   REACTION CONVERSION SPECS: NUMBER=    1
+     REACTION #   1:
+     SUBSTREAM:MIXED    KEY COMP:BENZA-01 CONV FRAC: 0.9000    
+
+
+
+
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE K                                 323.150      
+   SPECIFIED PRESSURE    ATM                                 1.57908    
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.000100000
+   SIMULTANEOUS REACTIONS
+   GENERATE COMBUSTION REACTIONS FOR FEED SPECIES          NO  
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    K                                    323.15    
+   OUTLET PRESSURE       ATM                                  1.5791    
+   HEAT DUTY             CAL/SEC                             -48399.    
+   VAPOR FRACTION                                            0.56372    
+
+
+
+   REACTION EXTENTS:
+
+      REACTION          REACTION
+      NUMBER            EXTENT  
+                        KMOL/HR         
+      1                  8.5939    
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      BENZA-01         0.48191E-01    0.38927E-05    0.85485E-01     21960.    
+      ACETA-01         0.48173E-01    0.38537E-05    0.85452E-01     22174.    
+      2-MET-01         0.43372        0.46614E-07    0.76939        0.16506E+08
+      WATER            0.43372        0.91704        0.59674E-01    0.65072E-01
+      SODIU-01         0.36189E-01    0.82949E-01    0.37846E-18    0.45626E-17

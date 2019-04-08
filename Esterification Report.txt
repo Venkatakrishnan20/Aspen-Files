@@ -1,0 +1,147 @@
+
+ BLOCK:  B1       MODEL: RPLUG           
+ -----------------------------
+   INLET STREAM:          1       
+   OUTLET STREAM:         2       
+   PROPERTY OPTION SET:   SRK       SOAVE-REDLICH-KWONG EQUATION OF STATE       
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                              IN          OUT       GENERATION   RELATIVE DIFF.
+   TOTAL BALANCE
+   MOLE(KMOL/SEC)        0.591271E-01  0.584147E-01 -0.712335E-03  0.403410E-16
+   MASS(KG/SEC  )         1.18358       1.18358                    0.562814E-15
+   ENTHALPY(WATT    )   -0.131608E+08 -0.136232E+08                0.339449E-01
+
+                          ***  INPUT DATA  ***
+
+   REACTOR TYPE:  
+     SPECIFIED TEMPERATURE   
+     TWO-PHASE                   
+   REACTOR TUBE LENGTH                  METER                30.980    
+                DIAMETER                METER               0.15500    
+   NUMBER OF REACTOR TUBES                                  10
+   REACTOR VOLUME                       CUM                  5.8457    
+   ERROR TOLERANCE                                           0.10000E-03
+   INTEGRATION METHOD                                        GEAR
+   CORRECTOR METHOD                                          NEWTON
+   INITIAL STEP SIZE FACTOR                                  0.10000E-01
+   CORRECTOR TOLERANCE FACTOR                                0.10000    
+   MAXIMUM NUMBER OF STEPS                                    1000
+
+   TEMPERATURE PROFILES:
+
+     RELATIVE LOCATION          TEMPERATURE
+           0.00000E+00          468.15    K               
+
+
+    REACTION PARAGRAPH            ID:  R-1            TYPE:  POWERLAW
+    GLOBAL BASES:
+    KBASIS                                                   MOLE-GAMMA  
+    CBASIS                                                   MOLARITY    
+    SBASIS                                                   GLOBAL  
+
+    STOICHIOMETRY:         
+
+    REACTION NUMBER:          1
+      SUBSTREAM:  MIXED   
+        ETHYL-01   -1.0000      WATER      -1.0000      ETHYL-02    1.0000    
+
+    REAC-DATA ENTRIES:
+
+      REACTION NO    TYPE     PHASE        DELT             BASIS
+                                              K   
+
+          1        KINETIC      V       0.00000E+00       MOLARITY    
+
+
+    RATE PARAMETERS:
+
+      REACTION NO   PREEXP. FACTOR   ACT. ENERGY   TEMP. EXPONENT   REF. TEMP
+                                       J/KMOL                       K       
+
+          1           0.38300E-02     0.52335E+06     1.0000         195.00    
+
+    POWERLAW EXPONENTS:    
+
+    REACTION NUMBER:          1
+      SUBSTREAM:  MIXED   
+        ETHYL-01    1.0000      WATER       1.0000    
+
+                           ***  RESULTS  ***
+
+    REACTOR DUTY                WATT                        -0.46244E+06
+    RESIDENCE TIME              SEC                           42.225    
+    REACTOR MINIMUM TEMPERATURE K                            468.15    
+    REACTOR MAXIMUM TEMPERATURE K                            468.15    
+
+
+           *** RESULTS PROFILE (PROCESS STREAM) ***                         
+
+       LENGTH        PRESSURE      TEMPERATURE   VAPOR FRAC    RES-TIME
+       METER         N/SQM         K                           SEC         
+
+       0.00000E+00   0.15199E+07    468.15        1.0000       0.00000E+00
+        3.0980       0.15199E+07    468.15        1.0000        3.9204    
+        6.1960       0.15199E+07    468.15        1.0000        7.8460    
+        9.2940       0.15199E+07    468.15        1.0000        11.777    
+        12.392       0.15199E+07    468.15       0.99392        15.723    
+        15.490       0.15199E+07    468.15       0.95876        19.769    
+        18.588       0.15199E+07    468.15       0.92625        23.957    
+        21.686       0.15199E+07    468.15       0.89563        28.293    
+        24.784       0.15199E+07    468.15       0.86659        32.782    
+        27.882       0.15199E+07    468.15       0.83884        37.424    
+        30.980       0.15199E+07    468.15       0.81220        42.225    
+
+
+           ***  TOTAL MOLE FRACTION PROFILE (PROCESS STREAM) ***            
+
+       LENGTH        ETHYL-01      WATER         ETHYL-02
+       METER       
+
+       0.00000E+00   0.76898E-01   0.92310       0.00000E+00
+        3.0980       0.75778E-01   0.92301       0.12130E-02
+        6.1960       0.74671E-01   0.92292       0.24125E-02
+        9.2940       0.73576E-01   0.92283       0.35986E-02
+        12.392       0.72491E-01   0.92274       0.47735E-02
+        15.490       0.71397E-01   0.92264       0.59593E-02
+        18.588       0.70283E-01   0.92255       0.71660E-02
+        21.686       0.69149E-01   0.92246       0.83938E-02
+        24.784       0.67997E-01   0.92236       0.96415E-02
+        27.882       0.66828E-01   0.92226       0.10909E-01
+        30.980       0.65641E-01   0.92216       0.12194E-01
+
+
+           *** LIQUID MOLE FRACTION PROFILE (PROCESS STREAM) ***            
+
+       LENGTH        ETHYL-01      WATER         ETHYL-02
+       METER       
+
+       0.00000E+00   0.18870E-02   0.99811       0.00000E+00
+        3.0980       0.19585E-02   0.99144       0.66009E-02
+        6.1960       0.20340E-02   0.98437       0.13591E-01
+        9.2940       0.21129E-02   0.97691       0.20979E-01
+        12.392       0.21954E-02   0.96997       0.27835E-01
+        15.490       0.22756E-02   0.96779       0.29935E-01
+        18.588       0.23514E-02   0.96576       0.31892E-01
+        21.686       0.24230E-02   0.96387       0.33712E-01
+        24.784       0.24914E-02   0.96208       0.35428E-01
+        27.882       0.25571E-02   0.96039       0.37057E-01
+        30.980       0.26211E-02   0.95876       0.38615E-01
+
+
+           ***  VAPOR MOLE FRACTION PROFILE (PROCESS STREAM) ***            
+
+       LENGTH        ETHYL-01      WATER         ETHYL-02
+       METER       
+
+       0.00000E+00   0.76898E-01   0.92310       0.00000E+00
+        3.0980       0.75778E-01   0.92301       0.12130E-02
+        6.1960       0.74671E-01   0.92292       0.24125E-02
+        9.2940       0.73576E-01   0.92283       0.35986E-02
+        12.392       0.72921E-01   0.92245       0.46325E-02
+        15.490       0.74369E-01   0.92070       0.49281E-02
+        18.588       0.75691E-01   0.91911       0.51974E-02
+        21.686       0.76925E-01   0.91763       0.54435E-02
+        24.784       0.78082E-01   0.91625       0.56717E-02
+        27.882       0.79175E-01   0.91494       0.58851E-02
+        30.980       0.80213E-01   0.91370       0.60853E-02
